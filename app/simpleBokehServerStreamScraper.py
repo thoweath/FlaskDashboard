@@ -23,7 +23,7 @@ def extract_value(market_name='okcoinCNY'):
 def update():
     new_data = dict(x=[datetime.now()],y=[extract_value(select.value)])
     source.stream(new_data,rollover=15)
-    print(source.data)
+    # print(source.data)
 
 #need to define an intermediate callback function (to call the update function) that accepts the required positional args (attr,old,new) so you can indirectly call the update function on the select.on_change() method without having to pass in the required args, because we dont need/cant use those args here
 def update_callback(attr,old,new):
