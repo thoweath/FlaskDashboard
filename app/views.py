@@ -14,7 +14,7 @@ def index():
     bokehServer = autoload_server(None,app_path="/simpleBokehServerStreamScraper", session_id=session.id)
     return render_template('TestDashboardTemplate.html',BenfordsLaw=Markup(plot(benford.benford_fig, output_type='div'))
     ,choromap=Markup(plot(choromap.choromap, output_type='div')),
-    bokehElementScript=bokehElement.script,bokehElementDiv=bokehElement.div,cdn_js=bokehElement.cdn_js,cdn_css=bokehElement.cdn_css,
+    bokehElementScript=bokehElement.script,bokehElementDiv=bokehElement.div,#cdn_js=bokehElement.cdn_js,cdn_css=bokehElement.cdn_css,
     # bokehServerScript=simpleBokehServerStreamScraper.script, bokehServerDiv=simpleBokehServerStreamScraper.div,
     # wscript=simpleBokehServer4.wscript,wdiv=simpleBokehServer4.wdiv,
     bokehServer=bokehServer

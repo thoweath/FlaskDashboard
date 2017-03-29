@@ -29,5 +29,5 @@ p1.line('atomic mass','atomic radius',color='blue', source=source)
 
 script, div = components(p1)
 
-cdn_css = CDN.css_files[0]
-cdn_js = CDN.js_files[0]
+# cdn_css = CDN.css_files[0]
+# cdn_js = CDN.js_files[0]
